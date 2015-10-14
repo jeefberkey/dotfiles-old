@@ -1,0 +1,15 @@
+[submodule "dmenu-q-xywh-xft"]
+	path = dmenu-q-xywh-xft
+	url = https://github.com/mil/dmenu-q-xywh-xft.git
+[submodule "i3-gaps"]
+	path = i3-gaps
+	url = https://github.com/Airblader/i3.git
+[submodule "j4-dmenu-desktop"]
+	path = j4-dmenu-desktop
+	url = https://github.com/enkore/j4-dmenu-desktop.git
+[submodule "i3blocks"]
+	path = i3blocks
+	url = https://github.com/vivien/i3blocks.git
+[submodule "fonts"]
+	path = fonts
+	url = https://github.com/powerline/fonts.git
