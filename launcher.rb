@@ -8,6 +8,9 @@ resX, resY = `xrandr`.scan(/current (\d+) x (\d+)/).flatten
 locX = (resX.to_i - width) / 2
 locY = (resY.to_i - line_height*lines) / 2
 
+puts resX,resY
+puts locX,locY
+
 launcher = '/usr/local/bin/j4-dmenu-desktop'
 dmenu_cmd = ['"dmenu -i',
   '-fn \'Source Code Pro for Powerline-12\'',
@@ -21,4 +24,4 @@ dmenu_cmd = ['"dmenu -i',
 launcher_opts = "--use-xdg-de --term=\"gnome-terminal\" --dmenu=#{dmenu_cmd.join(" ")}"
 
 cmd = [launcher,launcher_opts].join(" ")
-%x(#{cmd})
+`#{cmd}`
